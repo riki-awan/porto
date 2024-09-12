@@ -1,4 +1,4 @@
-import{A as a}from"./UIcon.b4252c75.js";import{g as e}from"./skills.f2c3a546.js";const o=[{slug:"awanbisnis",color:"#5e95e3",description:`
+import{A as a}from"./UIcon.f5826f19.js";import{g as e}from"./skills.7bd9958e.js";const o=[{slug:"awanbisnis",color:"#5e95e3",description:`
 PT. Aplikasi Wirausaha Nusantara, juga dikenal sebagai AWAN, adalah perusahaan yang menyediakan solusi aplikasi pembayaran online.
 # Sub Project
 - Website Company Profile

@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.b4252c75.js";import{g as n}from"./skills.f2c3a546.js";import{C as o}from"./types.1ebf2f37.js";const i=[{slug:"open-sourcer",company:"Staff IT",description:`# Deskripsi Pekerjaan
+import{A as e}from"./UIcon.f5826f19.js";import{g as n}from"./skills.7bd9958e.js";import{C as o}from"./types.1ebf2f37.js";const i=[{slug:"open-sourcer",company:"Staff IT",description:`# Deskripsi Pekerjaan
 - Membangun API Backend
 - Membangun Web Apps Pembayaran & Affiliator
 - Membangun Web Apps Monitoring

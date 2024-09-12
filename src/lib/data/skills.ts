@@ -1,6 +1,5 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -38,26 +37,43 @@ export const items = [
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website lebih dinamis dan interaktif. Dengan JavaScript, Anda bisa menambahkan elemen seperti animasi, formulir interaktif, dan konten yang dapat diperbarui tanpa harus memuat ulang halaman.',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'ts',
+		slug: 'php',
+		color: 'purple',
+		description:
+			'PHP adalah bahasa pemrograman server yang digunakan untuk membuat situs web dinamis dan interaktif. PHP dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.PHP,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'python',
+		color: 'yellow',
+		description:
+			'Python adalah bahasa pemrograman yang digunakan untuk membuat aplikasi berbasis komputer. Python dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'dart',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
+			'Dart adalah bahasa pemrograman yang digunakan untuk membuat aplikasi berbasis komputer. Dart dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Dart,
+		name: 'Dart',
 		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'CSS adalah bahasa pemrograman yang digunakan untuk membuat tampilan website lebih menarik dan interaktif. CSS dapat digunakan untuk membuat tampilan website, blog, dan aplikasi e-commerce.',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -66,37 +82,111 @@ export const items = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'HTML adalah bahasa pemrograman yang digunakan untuk membuat tampilan website lebih menarik dan interaktif. HTML dapat digunakan untuk membuat tampilan website, blog, dan aplikasi e-commerce.',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
+		slug: 'flutter',
+		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+			'Flutter adalah bahasa pemrograman yang digunakan untuk membuat aplikasi berbasis komputer. Flutter dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Flutter,
+		name: 'Flutter',
+		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
+		slug: 'codeigniter',
+		color: 'yellow',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+			'CodeIgniter adalah framework PHP yang digunakan untuk membuat aplikasi web. Code Igniter dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.CodeIgniter,
+		name: 'CodeIgniter',
+		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'svelte',
+		slug: 'laravel',
+		color: 'yellow',
+		description:
+			'Laravel adalah framework PHP yang digunakan untuk membuat aplikasi web. Laravel dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Laravel,
+		name: 'Laravel',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'green',
+		description:
+			'Fastapi adalah framework Python yang digunakan untuk membuat aplikasi web. Fastapi dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.FastApi,
+		name: 'Fastapi',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'vue',
 		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
-	})
+		description: 'Vue adalah framework JavaScript yang digunakan untuk membuat aplikasi web. Vue dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.VueJs,
+		name: 'Vue',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'vite',
+		color: 'orange',
+		description: 'Vite adalah framework JavaScript yang digunakan untuk membuat aplikasi web. Vite dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Vite,
+		name: 'Vite',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'vitest',
+		color: 'orange',
+		description: 'Vitest adalah framework JavaScript yang digunakan untuk membuat aplikasi web. Vitest dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.Vitest,
+		name: 'Vitest',
+		category: 'test'
+	}),
+	defineSkill({
+		slug: 'mysql',
+		color: 'orange',
+		description: 'MySQL adalah database server yang digunakan untuk membuat aplikasi web. MySQL dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'sqlite',
+		color: 'orange',
+		description: 'SQLite adalah database server yang digunakan untuk membuat aplikasi web. SQLite dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.SQLite,
+		name: 'SQLite',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'orange',
+		description: 'Amazon Web Services (AWS) adalah platform cloud computing yang digunakan untuk membuat aplikasi web. AWS dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.AWS,
+		name: 'Amazon Web Services',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'gcp',
+		color: 'orange',
+		description: 'Google Cloud Platform (GCP) adalah platform cloud computing yang digunakan untuk membuat aplikasi web. GCP dapat digunakan untuk membuat aplikasi web, blog, dan aplikasi e-commerce.',
+		logo: Assets.GCP,
+		name: 'Google Cloud Platform',
+		category: 'devops'
+	}),
+	// defineSkill({
+	// 	slug: 'svelte',
+	// 	color: 'orange',
+	// 	description: svelte,
+	// 	logo: Assets.Svelte,
+	// 	name: 'Svelte',
+	// 	category: 'framework'
+	// }),
 ] as const;
 
 export const title = 'Skills';

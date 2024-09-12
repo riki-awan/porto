@@ -26,7 +26,10 @@
 	<div class="md:flex-1 gap-10px">
 		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
-			{description}
+			adalah nama saya, 
+			Saya adalah programmer berpengalaman sejak tahun 2020, dengan keahlian di Backend dan Frontend Development.<br><br>
+			Saat ini bekerja di PT Aplikasi Wirausaha Nusantara <a href="https://awanbisnis.com/" target="_blank">(https://awanbisnis.com)</a> dan pernah terlibat dalam proyek 6 bulan di PT. Sae Gerbang Pembayaran <a href="https://saepay.id" target="_blank">(https://saepay.id)</a><br><br>
+			Saya menguasai pengembangan aplikasi web dan mobile serta manajemen server yang baik.
 		</p>
 		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
 			{#each links as link}

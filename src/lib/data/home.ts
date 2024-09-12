@@ -1,9 +1,9 @@
 import { Platform } from '$lib/types';
 import { getSkills } from './skills';
 
-export const title = 'Home';
+export const title = 'Riki';
 
-export const name = 'Name';
+export const name = 'S';
 
 export const lastName = 'LastName';
 
